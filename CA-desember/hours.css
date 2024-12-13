@@ -1,0 +1,86 @@
+
+
+.hours-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.hours-text {
+    flex: 1;
+    font-family: 'Arial', sans-serif;
+    color: #2a2929;
+    line-height: 1.6;
+}
+
+
+
+.hours-text h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+
+
+}
+
+
+
+.hours-text p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+
+.hours-text ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+
+}
+
+.hours-text ul li {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #333;
+
+}
+
+
+.hours-image {
+
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
+.hours-image img {
+
+
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .hours-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hours-image img {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+}

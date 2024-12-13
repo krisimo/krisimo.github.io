@@ -1,0 +1,17 @@
+
+
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column !important; 
+        text-align: center;
+    }
+
+    .content-section img {
+        max-width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .content {
+        max-width: 100%;
+    }
+}

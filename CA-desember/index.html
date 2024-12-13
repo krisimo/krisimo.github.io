@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- add meta -->
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Science, Museum, gift, shop, teaching, learning">
+    <meta name="author" content="Kristoffer Simonsen Haugland">
+  <!-- icon displayed in the browser tab -->
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+
+ 
+    <link rel="stylesheet" href="head.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Science Museum</title>
+</head>
+<body>
+
+    <!-- start fo header should be the same in every html file -->
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="./assets/science-logo1.png" alt="Museum Science Logo" class="logo"></a>
+        </div>
+        <h2 class="site-title">Science<br>Museum</h1>
+        <!-- this should be added in the droppdown on 1072px -->
+        <nav class="navbar">
+            <a href="kids.html" class="nav-link-kids">KIDS</a>
+            <a href="teacher.html" class="nav-link">TEACHERS</a>
+            <a href="researcher.html" class="nav-link">RESEARCHERS</a>
+            <!-- droppdown button  -->
+            <div class="dropdown">
+                <button class="dropbtn">MENU</button>
+                <ul class="dropdown-content">
+                    <li><a href="kids.html">KIDS</a></li>
+                    <li><a href="teacher.html">TEACHERS</a></li>
+                    <li><a href="researcher.html">RESEARCHERS</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="hours.html">OPENING HOURS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </div>
+            <input class="search" id="search" name="search" placeholder="Search">
+        </nav>
+    </header>
+<!-- end of headder cmd+c cmd+v -->
+
+
+    <main>    
+        <h1 class="page-title">Welcome to the Science Museum</h1>
+
+        <!-- container 1  -->
+        <a href="kids.html" class="content-section-link">
+            <section class="content-section">
+                <div class="content">
+                    <h2>FOR KIDS</h2>
+                    <p class="section-subtitle">Explore, Learn, and Play!</p>
+                    <p>Welcome to the kids' section, where science comes alive! Dive into hands-on activities, fun experiments, and interactive exhibits designed just for you.</p>
+                </div>
+                <img src="./assets/index_img1.jpg" alt="Kids learning diffrent things">
+            </section>
+        </a>
+             <!-- reverse container 2 -->
+        <a href="teacher.html" class="content-section-link">
+            <section class="content-section">
+                <img src="./assets/index_img2.jpg" alt="images of different instalations">
+
+                <div class="content">
+                    <h2>FOR TEACHERS</h2>
+                    <p class="section-subtitle">Inspire Future Scientists</p>
+                    <p>Access lesson plans, workshop details, and interactive activities tailored for students of all ages.</p>
+                </div>
+            </section>
+        </a>
+    <!-- container 3 -->
+        <a href="researcher.html" class="content-section-link">
+            <section class="content-section">
+                <div class="content">
+                    <h2>FOR RESEARCHERS</h2>
+                    <p class="section-subtitle">Expand the Frontiers of Knowledge</p>
+                    <p>Connect with cutting-edge research initiatives, collaborate with fellow scientists, and access extensive databases.</p>
+                </div>
+                <img src="./assets//index_img3.jpg" alt="Researchers at work">
+            </section>
+        </a>
+    </main>
+    
+
+<!-- footer styling in footer.css -->
+    <footer>
+        <div class="textbox">
+            <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">
+                <p>KJELSÅSVEIEN 143 <br> 0491 OSLO</p>
+            </a>
+        </div>
+        
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="./assets/fb-icon.png" alt="Facebook logo" class="facebook">
+            </a>
+            <a href="https://x.com/" target="_blank">
+                <img src="./assets/x-icon1.png" alt="X logo" class="x">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="./assets/ins-icon.png" alt="Instagram logo" class="instagram">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
