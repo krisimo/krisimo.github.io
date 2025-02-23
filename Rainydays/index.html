@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="motorcycle jacket shop">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="motorcycle jacket, jacket, motorcycle">
+    <meta name="author" content="Kristoffer Simonsen Haugland">
+    <title>Home</title>
+
+    <link rel="icon" href="./assets/images/racing-helmet.png" type="image/x-icon">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/head.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/buttons.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+
+
+    <!-- JavaScript (defer for proper loading) -->
+    <script src="./api.js" defer></script>
+    <script src="./jacket.js" defer></script>  
+    <script src="./cart.js" defer></script>
+    <script src="login.js" defer></script>
+
+
+
+    <title>Rainy Days</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./assets/images/RainyDays_Logo.png" alt="Rainydays Logo">
+                </a>
+            </div>
+
+            <div class="search-container">
+                <input type="text" class="search" id="search" name="search" placeholder="Search">
+            </div>
+
+            <div class="nav-right">
+                <ul class="navbar">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                </ul>
+                <div class="login">
+                    <a href="./login.html" class="login-link">
+                        <img src="./assets/images/log-in.png" class="login-icon" alt="Login">
+                    </a>
+                </div>
+                <div class="cart-container">
+                    <a href="./cart.html" class="cart-link">
+                        <img src="./assets/images/cart_icon.png" class="cart-icon" alt="Cart">
+                        <span id="cart-count" class="cart-badge">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Parallax Section -->
+    <div class="parallax"></div>
+
+    <!-- Jacket Container -->
+    <div id="jackets-container" class="container"></div>
+
+        
+        <div class="pagination">
+            <button id="prevPage" class="arrow" disabled>&#9665;</button> 
+            <span id="currentPage" class="page-number">1</span> 
+            <button id="nextPage" class="arrow">&#9655;</button>
+        </div> 
+    
+        
+        <section class="delivery-info">
+            <h2>Delivery Information</h2>
+            <p>At Rainydays, we offer free standard shipping on all orders within the country.</p>
+            <ul>
+                <li>Standard Delivery: 3-5 weeks</li>
+                <li>Express Delivery: 1-2 weeks (additional charges apply)</li>
+                <li>International Shipping: 7-14 weeks</li>
+            </ul>
+            <p>All jackets are made in-house from carefully selected materials. You will receive tracking information once your order is shipped.</p>
+        </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-info">
+            <p>Email: <u>support@rainydays.no</u></p>
+            <p>Follow us on:</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/?locale=nb_NO" target="_blank">
+                    <img src="./assets/images/fb-icon.png" alt="Facebook logo" class="facebook">
+                </a>
+                <a href="https://x.com/?lang=nb" target="_blank">
+                    <img src="./assets/images/x-icon.png" alt="X logo" class="x">
+                </a>
+                <a href="https://www.instagram.com/reels/DBcUUuGyzEm/" target="_blank">
+                    <img src="./assets/images/ins-icon.png" alt="Instagram logo" class="instagram">
+                </a>
+            </div>
+            <p><strong>Return Policy:</strong> You can return any unused items within 30 days for a full refund.</p>
+        </div>
+    </footer>
+</body>
+</html>

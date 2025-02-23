@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    background: linear-gradient(rgba(162, 162, 162, 0.75), rgba(171, 171, 171, 0.75)), 
+
+                url("../images/AboutBackGound.jpg") center/cover no-repeat; 
+                background-attachment: fixed; 
+}
+
+
+main {
+    flex: 1;
+}
+
+
+.about-us {
+    background-color: #848484; 
+    padding: 80px;
+    margin: 200px auto;
+    max-width: 800px;
+    line-height: 1.8;
+    color: #000000;
+}
+
+
+.about-us .section {
+    padding-top: 20px;
+    margin-top: 50px;
+}
+
+.about-us h3 {
+    font-size: 1.4rem;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-us p {
+    margin: 15px 0;
+    color: #3c3c3c;
+}
+
+
+
+
+

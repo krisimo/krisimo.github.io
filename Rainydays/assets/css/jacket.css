@@ -1,0 +1,131 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d0d0d0;
+    color: #333;
+}
+
+
+main {
+    flex: 1;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: 1200px;
+    margin: 100px auto 20px;
+    padding: 20px;
+}
+
+
+.product-page {
+    display: flex;
+    gap: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    flex: 1; 
+    max-width: 250px; 
+    margin: auto;
+}.product-image img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.product-details {
+    flex: 2; 
+}
+
+.product-details h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+}
+
+.product-details .price {
+    font-size: 1.6rem; 
+    color: #00da24;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.product-details .description {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+.specifications {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 1rem; 
+    color: #333;
+}
+
+.specifications li {
+    margin-bottom: 8px;
+}
+
+.cart-button {
+    background-color: #ff4d4d;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 0,9rem; 
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cart-button:hover {
+    background-color: #e03e3e;
+
+
+}
+
+
+
+.delivery-info {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.delivery-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.delivery-info p, .delivery-info ul {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.delivery-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.delivery-info ul li {
+    margin-bottom: 8px;
+}
+

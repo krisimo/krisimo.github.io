@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="motorcycle jacket shop">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="motorcycle jacket, jacket, motorcycle">
+    <meta name="author" content="Kristoffer Simonsen Haugland">
+
+    <link rel="icon" href="./images/racing-helmet.png" type="image/x-icon">
+
+    <title>Jacket Red</title>
+
+    <script src="./cart.js" defer></script>
+   
+    <link rel="stylesheet" href="./jacket.css">
+    <link rel="stylesheet" href="./head.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./button.css">
+
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./images/RainyDays_Logo.png" alt="Raynydays Logo">
+                </a>
+            </div>
+    
+            <!-- Search Bar (Centered) -->
+            <div class="search-container">
+                <input type="text" class="search" id="search" name="search" placeholder="Search">
+            </div>
+    
+            <!-- Navigation & Cart -->
+            <div class="nav-right">
+                <ul class="navbar">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                </ul>
+                <div class="cart-container">
+                    <a href="./cart.html" class="cart-link">
+                        <img src="./images/cart_icon.png" class="cart-icon" alt="Cart">
+                        <span id="cart-count" class="cart-badge">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+       
+    <main class="container">
+        <div id="jacket-details" class="product-page">
+            <div class="product-image">
+                <img src="./images/7jacketred.jpg" alt="5hi3ld Superb Armored Red">
+            </div>
+            <div class="product-details">
+                <h1>5hi3ld Superb Armored Red</h1>
+                <p class="price">$4999</p>
+                <p class="description">Sleek, armored, and street-ready. Perfect for night rides through neon-lit streets.</p>
+
+                <label for="size">Select Size:</label>
+                <select id="size">
+                    <option value="S">Small (S)</option>
+                    <option value="M">Medium (M)</option>
+                    <option value="L">Large (L)</option>
+                    <option value="XL">Extra Large (XL)</option>
+                    <option value="XXL">XX-Large (XXL)</option>
+                </select>
+
+                <button class="add-to-cart" data-id="7">Add To Cart</button>
+            </div>
+        </div>
+    </main>
+    <section class="delivery-info">
+        <h2>Delivery Information</h2>
+        <p>At Raynydays, we offer free standard shipping on all orders within the country. Our typical delivery times are:</p>
+        <ul>
+            <li>Standard Delivery: 3-5 business days</li>
+            <li>Express Delivery: 1-2 business days (additional charges apply)</li>
+            <li>International Shipping: 7-14 business days</li>
+        </ul>
+        <p>All orders are processed within 24 hours of placing them, and you will receive tracking information once your order is shipped. We ensure a smooth and reliable delivery service to make sure you get your jacket on time.</p>
+    </section>
+   
+   
+    <footer>
+        <div class="footer-info">
+            <p>Email: <u>support@rainydays.no</u></p>
+            <p>Follow us on:</p>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com/?locale=nb_NO" target="_blank">
+                    <img src="./images/fb-icon.png" alt="Facebook logo" class="facebook">
+                </a>
+                <a href="https://x.com/?lang=nb" target="_blank">
+                    <img src="./images/x-icon.png" alt="X logo" class="x">
+                </a>
+                <a href="https://www.instagram.com/reels/DBcUUuGyzEm/" target="_blank">
+                    <img src="./images/ins-icon.png" alt="Instagram logo" class="instagram">
+                </a>
+            </div>
+    
+            <p><strong>Return Policy:</strong> You can return any unused items within 30 days for a full refund.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

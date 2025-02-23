@@ -1,0 +1,152 @@
+
+
+{
+    "jackets": [
+        {
+            "id": "1",
+            "title": "5hi3ld Superb Armored Black",
+            "description": "Sleek, armored, and street-ready. Perfect for night rides through neon-lit streets.",
+            "sizes": ["S", "M", "L", "XL", "XXL"],
+            "baseColor": "Black",
+            "price": 5999,
+            "discountedPrice": 4999,
+            "onSale": true,
+            "image": {
+                "url": "./assets/images/1jacketblack.jpg",
+                "alt": "Black armored motorcycle jacket"
+            },
+            "tags": ["jacket", "motorcycle"],
+            "favorite": false
+        },
+        {
+            "id": "2",
+            "title": "5hi3ld Superb Armored Black+Orange",
+            "description": "Bold and resilient, this black-and-orange jacket stands out in the urban chaos.",
+            "sizes": ["S", "M", "L", "XL", "XXL"],
+            "baseColor": "Black-Orange",
+            "price": 5999,
+            "discountedPrice": 4999,
+            "onSale": true,
+            "image": {
+                "url": "./assets/images/2jacketblackorange.jpg",
+                "alt": "Black and orange armored motorcycle jacket"
+            },
+            "tags": ["jacket", "motorcycle"],
+            "favorite": false
+        },
+
+        {
+            "id": "3",
+            "title": "5hi3ld Superb Armored Blue+Red",
+            "description": "A vivid choice for rebels on the move, blending classic style with modern protection.",
+            "sizes": ["S", "M", "L", "XL", "XXL"],
+            "baseColor": "Blue-Red",
+            "price": 5999,
+            "discountedPrice": 4999,
+            "onSale": true,
+            "image": {
+                "url": "./assets/images/3jacketbluered.jpg",
+                "alt": "Blue and red armored motorcycle jacket"
+            },
+            "tags": ["jacket", "motorcycle"],
+            "favorite": false
+        },
+        {
+            "id": "4",
+            "title": "5hi3ld Superb Armored Green",
+            "description": "Stealthy black with neon green accents—ideal for the tech-savvy rider.",
+            "sizes": ["S", "M", "L", "XL", "XXL"],
+            "baseColor": "Green",
+            "price": 5999,
+            "discountedPrice": 4999,
+            "onSale": true,
+            "image": {
+                "url": "./assets/images/4jacketgreen.jpg",
+                "alt": "Green armored motorcycle jacket"
+            },
+            "tags": ["jacket", "motorcycle"],
+            "favorite": false
+        },
+        {
+            "id": "5",
+            "title": "5hi3ld Superb Armored Green And Orange",
+            "description": "Energetic and tough. Designed for those who dare to ride against the tide.",
+            "sizes": ["S", "M", "L", "XL", "XXL"],
+            "baseColor": "Green-Orange",
+            "price": 5999,
+            "discountedPrice": 4999,
+            "onSale": true,
+            "image": {
+                "url": "./assets/images/5jacketgreenorange.jpg",
+                "alt": "Green and orange armored motorcycle jacket"
+            },
+            "tags": ["jacket", "motorcycle"],
+            "favorite": false
+        },
+        {
+            "id": "6",
+            "title": "5hi3ld Superb Armored Orange And Blue",
+            "description": "Vibrant and protective, this jacket thrives on fast streets and neon nights.",
+            "sizes": ["S", "M", "L", "XL", "XXL"],
+            "baseColor": "Orange-Blue",
+            "price": 1000000,
+            "discountedPrice": 500000,
+            "onSale": true,
+            "image": {
+                "url": "./assets/images/6jacketorangeblue.jpg",
+                "alt": "Orange and blue armored motorcycle jacket"
+            },
+            "tags": ["jacket", "motorcycle"],
+            "favorite": false
+        },
+        {
+            "id": "7",
+            "title": "5hi3ld Superb Armored Red",
+            "description": "A fiery classic for the daring rider, made to handle the heat of the city.",
+            "sizes": ["S", "M", "L", "XL", "XXL"],
+            "baseColor": "Red",
+            "price": 5999,
+            "discountedPrice": 4999,
+            "onSale": true,
+            "image": {
+                "url": "./assets/images/7jacketred.jpg",
+                "alt": "Red armored motorcycle jacket"
+            },
+            "tags": ["jacket", "motorcycle"],
+            "favorite": false
+        },
+        {
+            "id": "8",
+            "title": "5hi3ld Superb Armored Red+Green",
+            "description": "Dynamic red and green for high-energy rides in the electric cityscape.",
+            "sizes": ["S", "M", "L", "XL", "XXL"],
+            "baseColor": "Red-Green",
+            "price": 5999,
+            "discountedPrice": 4999,
+            "onSale": true,
+            "image": {
+                "url": "./assets/images/8jacketredgreen.jpg",
+                "alt": "Red and green armored motorcycle jacket"
+            },
+            "tags": ["jacket", "motorcycle"],
+            "favorite": false
+        },
+        {
+            "id": "9",
+            "title": "5hi3ld Superb Armored Red+Blue",
+            "description": "Bold red and blue—gear up for speed and style on the neon-lit roads.",
+            "sizes": ["S", "M", "L", "XL", "XXL"],
+            "baseColor": "Red-Blue",
+            "price": 5999,
+            "discountedPrice": 4999,
+            "onSale": true,
+            "image": {
+                "url": "./assets/images/9jcaketredblue.jpg",
+                "alt": "Red and blue armored motorcycle jacket"
+            },
+            "tags": ["jacket", "motorcycle"],
+            "favorite": false
+        }
+    ]
+}
+

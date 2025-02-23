@@ -1,0 +1,80 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    background: linear-gradient(rgba(197, 197, 197, 0.75), rgba(99, 99, 99, 0.75)), 
+
+                url("../images/AboutBackGound.jpg") center/cover no-repeat; 
+                background-attachment: fixed; 
+}
+
+
+main {
+    flex: 1;
+}
+
+
+#login-form {
+    position: fixed; 
+    top: 50%;       
+    left: 50%;     
+    transform: translate(-50%, -50%); 
+    z-index: 9999;  
+
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+
+#login-form input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+#login-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#login-form button:hover {
+    background: linear-gradient(45deg, #0056b3, #003c7e);
+}
+
+#login-error {
+    color: #ff4c4c;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+    #login-form {
+        width: 90%;
+        padding: 15px;
+    }
+}

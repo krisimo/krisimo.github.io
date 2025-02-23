@@ -1,0 +1,45 @@
+.add-to-cart {
+    background: linear-gradient(145deg, #281010, #002645); 
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100%;  
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    transform: scale(1.05); 
+}
+
+.add-to-cart:active {
+    transform: scale(0.95); 
+}
+
+.size-selector {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.size-selector:hover {
+    border-color: #007bff; 
+}
+
+.size-selector:focus {
+    outline: none;
+    border-color: #0056b3; 
+    background-color: #eaf2ff; 
+}
