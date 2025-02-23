@@ -12,22 +12,18 @@ const API_BASE_URL = "https://v2.api.noroff.dev/rainy-days";
 async function fetchJackets(page = 1) {
     try {
         if (page === 1) {
-            console.log(`Fetching from API: ${API_BASE_URL}?page=${page}`);
             const response = await fetch(`${API_BASE_URL}?page=${page}`);
 
             if (!response.ok) throw new Error(`API Fetch Error: ${response.status}`);
 
             const apiData = await response.json();
-            console.log("API Jackets Loaded:", apiData.data);
             return apiData.data;
         } else if (page === 2) {
-            console.log(`Fetching from Local JSON: ${LOCAL_JSON_PATH}`);
             const response = await fetch(LOCAL_JSON_PATH);
 
             if (!response.ok) throw new Error("Local JSON Fetch Error.");
 
             const localData = await response.json();
-            console.log("Local JSON Jackets Loaded:", localData);
 
             if (!localData || !localData.jackets) {
                 throw new Error("JSON structure incorrect! Expected { jackets: [...] }");
@@ -36,7 +32,6 @@ async function fetchJackets(page = 1) {
             return localData.jackets;
         }
     } catch (error) {
-        console.log("Fetching jackets failed:", error);
         return [];
     }
 }
@@ -63,7 +58,6 @@ async function displayJackets(page = 1) {
         return;
     }
 
-    console.log(`Displaying jackets for page: ${page}`);
     container.innerHTML = "";
 
     jackets.forEach(jacket => {
@@ -111,18 +105,15 @@ async function displayJackets(page = 1) {
 
 
 function attachCartListeners() {
-    console.log("Attaching 'Add to Cart' listeners...");
 
     setTimeout(() => {
         const buttons = document.querySelectorAll(".add-to-cart");
-        console.log("Found Add to Cart buttons:", buttons.length);
 
         buttons.forEach(button => {
             button.removeEventListener("click", handleAddToCart);
             button.addEventListener("click", handleAddToCart);
         });
 
-        console.log("Add to Cart Listeners Successfully Attached!");
     }, 500);
 }
 
@@ -138,7 +129,6 @@ function updatePaginationButtons() {
     const pageIndicator = document.getElementById("currentPage");
 
     if (!prevBtn || !nextBtn || !pageIndicator) {
-        console.error("⚠️ Pagination elements missing!");
         return;
     }
 
@@ -178,7 +168,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOM Loaded! Displaying jackets...");
     displayJackets();
 });
 
