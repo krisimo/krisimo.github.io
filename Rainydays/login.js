@@ -1,13 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOM Loaded, setting up login...");
 
     const loginForm = document.getElementById("login-form");
     if (!loginForm) {
-        console.error("Login form not found! Make sure you're on login.html");
         return;
     }
 
-    console.log("Login form found!");
 
     loginForm.addEventListener("submit", async (event) => {
         event.preventDefault();
@@ -31,14 +28,12 @@ document.addEventListener("DOMContentLoaded", () => {
             const data = await response.json();
 
             if (response.ok) {
-                console.log("Login successful!");
                 localStorage.setItem("user", JSON.stringify(data));
                 window.location.href = "./index.html"; // Redirect to home
             } else {
                 errorDisplay.textContent = "Invalid login credentials.";
             }
         } catch (error) {
-            console.error("Login failed:", error);
             errorDisplay.textContent = "Error logging in. Try again later.";
         }
     });
