@@ -87,8 +87,6 @@ function removeFromCart(jacketId, size) {
 // --------------------------------------------------------updates and displays the cart items, calculates the total price and adds remove buttons----------------------------------------------------
 function displayCart() {
 
-    console.log("Running displayCart()");
-    console.log("Found Remove Buttons:", document.querySelectorAll(".remove-item"));
 
 
 
@@ -327,7 +325,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOM Loaded, Running displayCart()...");
     displayCart(); 
 });
 
