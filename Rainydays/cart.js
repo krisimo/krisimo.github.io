@@ -3,23 +3,19 @@
 
 // Load Cart from Local Storage
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
-console.log("Loaded Cart:", cart);
 
 // Save Cart to Local Storage
 function saveCart() {
-    console.log("Saving Cart:", cart);
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 
 // Update the Cart Counter
 function updateCartDisplay() {
-    console.log("Updating Cart Counter...");
     const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
     const cartDisplay = document.getElementById("cart-count");
 
     if (cartDisplay) {
         cartDisplay.textContent = cartCount > 0 ? cartCount : "0";
-        console.log("Cart Counter Updated:", cartCount);
     }
 }
 
@@ -35,11 +31,9 @@ function updateCartDisplay() {
 
 
 function addToCart(jacketId) {
-    console.log(`ADD TO CART CLICKED: Jacket ID ${jacketId}`);
 
     const jacketElement = document.querySelector(`[data-id='${jacketId}']`);
     if (!jacketElement) {
-        console.log("⚠️ Jacket element not found!");
         return;
     }
 
@@ -60,13 +54,11 @@ function addToCart(jacketId) {
             quantity: 1
         };
 
-        console.log("Adding Jacket to Cart:", jacket);
         cart.push(jacket);
     }
 
     saveCart();
     updateCartDisplay();
-    console.log("Cart Updated:", cart);
 
 }
 
@@ -79,7 +71,6 @@ function addToCart(jacketId) {
 
 
 function removeFromCart(jacketId, size) {
-    console.log(`Removing Jacket ID: ${jacketId} (Size: ${size})`);
 
     cart = cart.filter(item => !(item.id === jacketId && item.size === size));
     saveCart();
@@ -105,7 +96,6 @@ function displayCart() {
     const cartTotal = document.getElementById("total-amount");
 
     if (!cartItemsContainer || !cartTotal) {
-        console.log("Cart elements not found in DOM!");
         return;
     }
 
@@ -145,7 +135,6 @@ function displayCart() {
 const clearCartButton = document.getElementById("clear-cart");
 if (clearCartButton) {
     clearCartButton.addEventListener("click", () => {
-        console.log("Clearing Cart...");
         localStorage.removeItem("cart"); 
         cart = []; 
         displayCart(); 
@@ -161,18 +150,15 @@ if (clearCartButton) {
 
 // Attach Event Listeners for "Add to Cart" Buttons
 function attachCartListeners() {
-    console.log("Attaching 'Add to Cart' Listeners...");
 
     setTimeout(() => {
         const buttons = document.querySelectorAll(".add-to-cart");
-        console.log("Found Add to Cart buttons:", buttons.length);
 
         buttons.forEach(button => {
             button.removeEventListener("click", handleAddToCart);
             button.addEventListener("click", handleAddToCart);
         });
 
-        console.log("Add to Cart Listeners Successfully Attached!");
     }, 500);
 }
 
@@ -189,16 +175,13 @@ function handleAddToCart(event) {
     const jacketId = event.target.dataset.id;
 
     if (!jacketId) {
-        console.error(" Jacket ID not found!");
         return;
     }
 
-    console.log(" Add to Cart Clicked! Jacket ID:", jacketId);
     addToCart(jacketId);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log(" Setting Up Cart...");
     attachCartListeners();
     updateCartDisplay();
     updateCartDisplay();
@@ -230,12 +213,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const cvvInput = document.getElementById("cvv");
 
     if (!completePurchaseBtn || !confirmationBox || !closeConfirmationBtn || !blurOverlay || !phoneInput || !emailInput || !nameInput || !addressInput || !cardNumberInput || !expirationDateInput || !cvvInput) {
-        console.log("One or more required elements are missing!");
         return;
     }
 
     completePurchaseBtn.addEventListener("click", () => {
-        console.log("Checking form before purchase...");
 
         const phoneNumber = phoneInput.value.trim();
         const email = emailInput.value.trim();
@@ -285,7 +266,6 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        console.log("All fields are filled! Proceeding with purchase...");
 
         confirmationBox.classList.add("show");
         blurOverlay.classList.add("show");
@@ -361,7 +341,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("click", event => {
     if (event.target.classList.contains("remove-item")) {
-        console.log("Remove Button Clicked!", event.target);
         
         const id = event.target.getAttribute("data-id");
         const size = event.target.getAttribute("data-size");
@@ -371,7 +350,6 @@ document.addEventListener("click", event => {
             return;
         }
 
-        console.log(`Removing Jacket ID: ${id}, Size: ${size}`);
         removeFromCart(id, size);
     }
 });
@@ -388,14 +366,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const checkoutFormContainer = document.querySelector(".checkout-container"); 
 
     if (!checkoutButton || !checkoutFormContainer) {
-        console.log("Checkout button or form not found!");
         return;
     }
 
     checkoutFormContainer.style.display = "none";
 
     checkoutButton.addEventListener("click", () => {
-        console.log("Checkout button clicked!");
 
         if (checkoutFormContainer.style.display === "none" || checkoutFormContainer.style.opacity === "0") {
             checkoutFormContainer.style.display = "block";
